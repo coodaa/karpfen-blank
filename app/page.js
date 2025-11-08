@@ -12,24 +12,27 @@ export default function Home() {
         justifyContent: "center",
         color: "white",
         textAlign: "center",
+        padding: "0 1rem",
       }}
     >
       <h1
         style={{
-          fontSize: "clamp(4rem, 12vw, 10rem)",
-          fontWeight: 600,
+          fontSize: "clamp(8.5rem, 18vw, 20rem)",
+          fontWeight: 700,
           lineHeight: 1,
           textTransform: "uppercase",
           margin: 0,
           whiteSpace: "pre-line",
+          letterSpacing: "-0.03em",
         }}
       >
         Karpfen{"\n"}Blank
       </h1>
+
       <p
         style={{
-          fontSize: "clamp(1.5rem, 4vw, 2.5rem)",
-          marginTop: "1rem",
+          fontSize: "clamp(2rem, 5vw, 4rem)", // 🔥 größer & weiterhin flexibel
+          marginTop: "2rem",
           fontWeight: 300,
         }}
       >
