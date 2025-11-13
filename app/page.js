@@ -78,20 +78,7 @@ export default function Home() {
           Jetzt kaufen – 35 €
         </button>
 
-        {/* SEO TEXT */}
-        <p
-          style={{
-            fontSize: "1.3rem",
-            maxWidth: "700px",
-            marginTop: "3rem",
-            opacity: 0.85,
-            lineHeight: 1.5,
-          }}
-        >
-          Karpfen Blank 2026 ist ein unabhängiger Kunstkalender aus Berlin.
-          Fotografiert an zwölf Orten, mit zwölf Menschen – verbunden durch
-          einen Stoffkarpfen.
-        </p>
+
 
         <p
           style={{
@@ -145,15 +132,21 @@ export default function Home() {
         </h2>
 
         {/* EXTENDED TEXT (wieder eingefügt) */}
-        <p
-          style={{
-            fontSize: "1.25rem",
-            marginTop: "1.5rem",
-            maxWidth: "650px",
-            lineHeight: 1.55,
-            opacity: 0.9,
-          }}
-        >
+      <p
+  style={{
+    fontSize: "1.25rem",
+    marginTop: "1.5rem",
+    maxWidth: "650px",
+    lineHeight: 1.55,
+    opacity: 0.9,
+    textAlign: "justify",
+    textAlignLast: "center",
+
+    hyphens: "auto",          // ✔ automatische Worttrennung (DE)
+    wordBreak: "break-word",  // ✔ Umbruch bei langen Wörtern
+    overflowWrap: "break-word", // ✔ verhindert große Lücken
+  }}
+>
           <strong>Karpfen Blank 2026</strong> ist ein unabhängiges Fotoprojekt
           aus Berlin. Ein Jahr lang haben wir einen Stoffkarpfen mit zwölf
           unterschiedlichen Menschen zusammengebracht – spontan, ehrlich und
