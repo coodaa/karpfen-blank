@@ -7,14 +7,84 @@ const anton = Anton({
 });
 
 export const metadata = {
-  title: "Karpfen Blank",
-  description: "Coming soon",
+  title: "Karpfen Blank 2026 – Alternativer Kunstkalender aus Berlin",
+  description:
+    "Karpfen Blank 2026 ist ein unabhängiger Kunstkalender aus Berlin. Zwölf Menschen. Ein Stoffkarpfen. Limitierte Auflage. 10 € Spende an den Berliner Kältebus.",
+  keywords: [
+    "Karpfen Kalender",
+    "Berlin Kalender 2026",
+    "Kunstkalender Berlin",
+    "alternativer Kalender",
+    "Independent Kalender",
+    "Berlin Kunstprojekt",
+    "Karpfen Blank",
+  ],
+  metadataBase: new URL("https://www.karpfen-blank.de"),
+  openGraph: {
+    title: "Karpfen Blank 2026 – Kunstkalender aus Berlin",
+    description:
+      "Ein alternativer Kalender aus Berlin. Zwölf Menschen. Ein Stoffkarpfen. Kleine Auflage, 10 € Spende an den Berliner Kältebus.",
+    url: "https://www.karpfen-blank.de",
+    siteName: "Karpfen Blank",
+    type: "website",
+    images: [
+      {
+        url: "/og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Karpfen Blank Kalender 2026 – Titelmotiv",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Karpfen Blank 2026 – Kunstkalender aus Berlin",
+    description:
+      "Alternativer Berlin-Kunstkalender in kleiner Auflage. 10 € Spende an den Berliner Kältebus.",
+    images: ["/og.jpg"],
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="de">
-      <body className={anton.className}>{children}</body>
+      <body className={anton.className}>
+        {/* STRUCTURED DATA: PRODUCT + ORGANIZATION */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Karpfen Blank",
+              url: "https://www.karpfen-blank.de",
+              email: "hi@karpfen-blank.de",
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org/",
+              "@type": "Product",
+              name: "Karpfen Blank Kalender 2026",
+              image: ["https://www.karpfen-blank.de/shop.png"],
+              description:
+                "Limitierter Kunstkalender aus Berlin. Zwölf Motive, ein Stoffkarpfen. 10 € Spende an den Berliner Kältebus.",
+              brand: "Karpfen Blank",
+              offers: {
+                "@type": "Offer",
+                url: "https://www.karpfen-blank.de",
+                priceCurrency: "EUR",
+                price: "35.00",
+                availability: "https://schema.org/InStock",
+              },
+            }),
+          }}
+        />
+        {children}
+      </body>
     </html>
   );
 }
