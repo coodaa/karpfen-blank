@@ -2,10 +2,7 @@
 
 export default function Home() {
   const handleBuy = () => {
-    window.open(
-      "https://www.paypal.com/ncp/payment/YOUR_PAYPAL_LINK",
-      "_blank"
-    );
+    window.open("https://www.paypal.com/ncp/payment/FMUUF5AXMEPBY", "_blank");
   };
 
   return (
@@ -38,7 +35,7 @@ export default function Home() {
       >
         <h1
           style={{
-            fontSize: "clamp(6.5rem, 18vw, 20rem)",
+            fontSize: "clamp(6rem, 18vw, 20rem)",
             fontWeight: 700,
             lineHeight: 1,
             textTransform: "uppercase",
@@ -54,7 +51,7 @@ export default function Home() {
           style={{
             marginTop: "2rem",
             opacity: 0.9,
-            fontSize: "clamp(1.2rem, 22vw, 1.6rem)",
+            fontSize: "clamp(1.1rem, 3vw, 1.6rem)",
           }}
         >
           Zwölf Menschen. Zwölf Orte. Ein Stoffkarpfen.
@@ -69,7 +66,7 @@ export default function Home() {
             border: "none",
             borderRadius: "999px",
             padding: "1rem 3rem",
-            fontSize: "1.3rem",
+            fontSize: "1.5rem",
             cursor: "pointer",
             marginTop: "2.5rem",
             transition: "transform 0.3s ease",
@@ -78,13 +75,11 @@ export default function Home() {
           Jetzt kaufen – 35 €
         </button>
 
-
-
         <p
           style={{
             marginTop: "2rem",
             opacity: 0.8,
-            fontSize: "1rem",
+            fontSize: "1.3rem",
           }}
         >
           Kontakt:{" "}
@@ -97,90 +92,107 @@ export default function Home() {
         </p>
       </section>
 
-      {/* SHOP SECTION */}
+      {/* SHOP SECTION – Overlay über demselben Hintergrund */}
       <section
         style={{
           minHeight: "100vh",
+          width: "100%",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
           padding: "3rem 1rem",
-          background: "white",
-          width: "100%",
-          color: "black",
+          position: "relative",
+          color: "white",
         }}
       >
-        <img
-          src="/shop.png"
-          alt="Karpfen Blank Kalender 2026 – Produktfoto"
+        {/* GRAUER SCHLEIER ÜBER DEM BILD */}
+        <div
           style={{
-            width: "clamp(250px, 60vw, 500px)",
-            borderRadius: "12px",
-            boxShadow: "0 0 30px rgba(0,0,0,0.15)",
+            position: "absolute",
+            inset: 0,
+            background: "rgba(0,0,0,0.55)",
+            backdropFilter: "blur(2px)",
+            zIndex: 0,
           }}
-        />
+        ></div>
 
-        <h2
+        {/* INHALT */}
+        <div
           style={{
-            fontSize: "clamp(2rem, 6vw, 4rem)",
-            marginTop: "2rem",
-            letterSpacing: "0.03em",
-          }}
-        >
-          Karpfen Kalender 2026
-        </h2>
-
-        {/* EXTENDED TEXT (wieder eingefügt) */}
-      <p
-  style={{
-    fontSize: "1.25rem",
-    marginTop: "1.5rem",
-    maxWidth: "650px",
-    lineHeight: 1.55,
-    opacity: 0.9,
-    textAlign: "justify",
-    textAlignLast: "center",
-
-    hyphens: "auto",          // ✔ automatische Worttrennung (DE)
-    wordBreak: "break-word",  // ✔ Umbruch bei langen Wörtern
-    overflowWrap: "break-word", // ✔ verhindert große Lücken
-  }}
->
-          <strong>Karpfen Blank 2026</strong> ist ein unabhängiges Fotoprojekt
-          aus Berlin. Ein Jahr lang haben wir einen Stoffkarpfen mit zwölf
-          unterschiedlichen Menschen zusammengebracht – spontan, ehrlich und
-          ohne Set-Design.
-          <br />
-          <br />
-          Die Motive sind eine Mischung aus Porträt, Alltag, Kunst und leichtem
-          Chaos. Sie zeigen Orte, an denen man vorbeigeht und Menschen, die man
-          vielleicht nie getroffen hätte.
-          <br />
-          <br />
-          Der Kalender erscheint bewusst in kleiner Auflage und wird komplett in
-          Berlin produziert. Mit jedem Kauf unterstützt du nicht nur dieses
-          Projekt, sondern spendest auch{" "}
-          <strong>10 € an den Berliner Kältebus</strong>, der jeden Winter
-          Menschen ohne Unterkunft hilft.
-        </p>
-
-        <button
-          onClick={handleBuy}
-          style={{
-            background: "black",
-            color: "white",
-            border: "none",
-            borderRadius: "999px",
-            padding: "1rem 3rem",
-            fontSize: "1.3rem",
-            cursor: "pointer",
-            marginTop: "2rem",
-            transition: "transform 0.3s ease",
+            position: "relative",
+            zIndex: 1,
+            maxWidth: "700px",
+            textAlign: "center",
+            padding: "0 1rem",
           }}
         >
-          Jetzt kaufen – 35 €
-        </button>
+          <img
+            src="/shop.png"
+            alt="Karpfen Blank Kalender 2026 – Produktfoto"
+            style={{
+              width: "clamp(250px, 60vw, 500px)",
+              borderRadius: "12px",
+              boxShadow: "0 0 30px rgba(0,0,0,0.5)",
+            }}
+          />
+
+          <h2
+            style={{
+              fontSize: "clamp(2rem, 6vw, 4rem)",
+              marginTop: "2rem",
+              letterSpacing: "0.03em",
+            }}
+          >
+            Karpfen Kalender 2026
+          </h2>
+
+          <p
+            style={{
+              fontSize: "1.25rem",
+              marginTop: "1.5rem",
+              lineHeight: 1.55,
+              opacity: 0.95,
+              textAlign: "justify",
+              textAlignLast: "center",
+              hyphens: "auto",
+              wordBreak: "break-word",
+              overflowWrap: "break-word",
+            }}
+          >
+            <strong>Karpfen Blank 2026</strong> ist ein unabhängiges Fotoprojekt
+            aus Berlin. Ein Jahr lang haben wir einen Stoffkarpfen mit zwölf
+            unterschiedlichen Menschen zusammengebracht – spontan, ehrlich und
+            ohne Set-Design.
+            <br />
+            <br />
+            Die Motive sind eine Mischung aus Porträt, Alltag, Kunst und Chaos.
+            Sie zeigen Orte, an denen man vorbeigeht und Menschen, die man
+            vielleicht nie getroffen hätte.
+            <br />
+            <br />
+            Mit jedem Kauf unterstützt du nicht nur dieses Projekt, sondern
+            spendest auch <strong>10 € an den Berliner Kältebus</strong>, der
+            jeden Winter Menschen ohne Unterkunft hilft.
+          </p>
+
+          <button
+            onClick={handleBuy}
+            style={{
+              background: "white",
+              color: "black",
+              border: "none",
+              borderRadius: "999px",
+              padding: "1rem 3rem",
+              fontSize: "1.3rem",
+              cursor: "pointer",
+              marginTop: "2.5rem",
+              transition: "transform 0.3s ease",
+            }}
+          >
+            Jetzt kaufen – 35 €
+          </button>
+        </div>
       </section>
     </main>
   );
