@@ -38,7 +38,7 @@ export default function Home() {
       >
         <h1
           style={{
-            fontSize: "clamp(7.5rem, 18vw, 20rem)",
+            fontSize: "clamp(6.5rem, 18vw, 20rem)",
             fontWeight: 700,
             lineHeight: 1,
             textTransform: "uppercase",
@@ -54,7 +54,7 @@ export default function Home() {
           style={{
             marginTop: "2rem",
             opacity: 0.9,
-            fontSize: "clamp(1.2rem, 2vw, 2rem)",
+            fontSize: "clamp(1.2rem, 22vw, 1.6rem)",
           }}
         >
           Zwölf Menschen. Zwölf Orte. Ein Stoffkarpfen.
@@ -89,14 +89,15 @@ export default function Home() {
           }}
         >
           Karpfen Blank 2026 ist ein unabhängiger Kunstkalender aus Berlin.
-          Fotografiert an zwölf Orten, mit zwölf Menschen – verbunden durch einen Stoffkarpfen.
+          Fotografiert an zwölf Orten, mit zwölf Menschen – verbunden durch
+          einen Stoffkarpfen.
         </p>
 
         <p
           style={{
             marginTop: "2rem",
             opacity: 0.8,
-            fontSize: "1.2rem",
+            fontSize: "1rem",
           }}
         >
           Kontakt:{" "}
@@ -143,31 +144,32 @@ export default function Home() {
           Karpfen Kalender 2026
         </h2>
 
-        {/* EXTENDED TEXT */}
+        {/* EXTENDED TEXT (wieder eingefügt) */}
         <p
           style={{
             fontSize: "1.25rem",
             marginTop: "1.5rem",
-            maxWidth: "700px",
+            maxWidth: "650px",
             lineHeight: 1.55,
             opacity: 0.9,
           }}
         >
-          <strong>Karpfen Blank 2026</strong> ist ein unabhängiges Fotoprojekt aus Berlin.
-          Ein Jahr lang haben wir einen Stoffkarpfen mit zwölf unterschiedlichen Menschen
-          zusammengebracht – spontan, ehrlich und ohne Set-Design.
+          <strong>Karpfen Blank 2026</strong> ist ein unabhängiges Fotoprojekt
+          aus Berlin. Ein Jahr lang haben wir einen Stoffkarpfen mit zwölf
+          unterschiedlichen Menschen zusammengebracht – spontan, ehrlich und
+          ohne Set-Design.
           <br />
           <br />
-          Die Motive sind eine Mischung aus Porträt, Alltag, Kunst und leichtem Chaos.
-          Sie zeigen Orte, an denen man vorbeigeht und Menschen, die man vielleicht nie
-          getroffen hätte.
+          Die Motive sind eine Mischung aus Porträt, Alltag, Kunst und leichtem
+          Chaos. Sie zeigen Orte, an denen man vorbeigeht und Menschen, die man
+          vielleicht nie getroffen hätte.
           <br />
           <br />
-          Der Kalender erscheint bewusst in kleiner Auflage. Mit jedem Kauf unterstützt du nicht nur dieses Projekt, sondern
-          spendest auch{" "}
+          Der Kalender erscheint bewusst in kleiner Auflage und wird komplett in
+          Berlin produziert. Mit jedem Kauf unterstützt du nicht nur dieses
+          Projekt, sondern spendest auch{" "}
           <strong>10 € an den Berliner Kältebus</strong>, der jeden Winter
           Menschen ohne Unterkunft hilft.
-        
         </p>
 
         <button
