@@ -48,7 +48,29 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="de">
-      <body className={anton.className}>
+      <body
+        className={anton.className}
+        style={{
+          minHeight: "100vh",
+          backgroundImage: "url('/karpfenblank.webp')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed",
+          color: "white",
+          position: "relative",
+        }}
+      >
+        {/* GLOBAL OVERLAY – für gute Lesbarkeit auf ALLEN Seiten */}
+        <div
+          style={{
+            position: "fixed",
+            inset: 0,
+            background: "rgba(0,0,0,0.45)",
+            backdropFilter: "blur(2px)",
+            zIndex: -1,
+          }}
+        ></div>
+
         {/* STRUCTURED DATA: PRODUCT + ORGANIZATION */}
         <script
           type="application/ld+json"
@@ -83,6 +105,8 @@ export default function RootLayout({ children }) {
             }),
           }}
         />
+
+        {/* PAGE CONTENT */}
         {children}
       </body>
     </html>
