@@ -90,6 +90,48 @@ export default function Home() {
             hi@karpfen-blank.de
           </a>
         </p>
+
+        {/* Instagram Icon Link */}
+        <a
+          href="https://www.instagram.com/karpfen.blank/?igsh=MXdra3NrOGlocDg0Nw%3D%3D&utm_source=qr"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            display: "inline-flex",
+            alignItems: "center",
+            justifyContent: "center",
+            width: "64px", // 👈 größerer Button
+            height: "64px", // 👈 größerer Button
+            borderRadius: "999px",
+            background: "rgba(255,255,255,0.15)",
+            backdropFilter: "blur(4px)",
+            marginTop: "2rem",
+            textDecoration: "none",
+          }}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32" // 👈 größeres Icon
+            height="32" // 👈 größeres Icon
+            fill="white"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757
+    2.243 5 5 5h10c2.757 0 5-2.243
+    5-5V7c0-2.757-2.243-5-5-5H7zm10
+    2c1.654 0 3 1.346 3
+    3v10c0 1.654-1.346 3-3
+    3H7c-1.654 0-3-1.346-3-3V7c0-1.654
+    1.346-3 3-3h10zm-5
+    3a5 5 0 100 10 5
+    5 0 000-10zm0 2a3 3 0 110
+    6 3 3 0 010-6zm4.5-.9a1.1 1.1
+    0 11-2.2 0 1.1 1.1 0
+    012.2 0z"
+            />
+          </svg>
+        </a>
       </section>
 
       {/* SHOP SECTION */}
@@ -134,10 +176,10 @@ export default function Home() {
             src="/shop.png"
             alt="Karpfen Blank Kalender 2026 – Produktfoto"
             style={{
-              width: "clamp(250px, 60vw, 500px)",
+              width: "clamp(250px, 70vw, 700px)",
               borderRadius: "12px",
               boxShadow: "0 0 30px rgba(0,0,0,0.5)",
-              marginTop: "4rem", // 👈 Abstand von oben
+              marginTop: "4rem", // Abstand von oben
             }}
           />
 
@@ -175,20 +217,12 @@ export default function Home() {
             ALLTAG, KUNST und leichtem CHAOS.
             <br />
             <br />
-            Der Kalender erscheint als hochwertige <strong>
-              A3-EDITION
-            </strong>{" "}
+            Der Kalender erscheint als hochwertige <strong>A3-EDITION</strong>
             (297 × 420 mm) auf stabilem Qualitätsdruck. Jede Ausgabe ein kleines
             Objekt – bewusst in LIMITIERTER AUFLAGE.
             <br />
             <br />
-            <span style={{ color: "#6EC8FF", fontWeight: 600 }}>
-              Pro Kalender spenden wir 10 € an den BERLINER KÄLTEBUS.
-            </span>
-            <br />
-            Die gesammelten Spenden werden am Ende der Verkaufsphase überwiesen
-            und öffentlich dokumentiert.
-            <br />
+            {/* (Spende-Zeile wurde entfernt) */}
             <br />
             Der Versand startet <strong>ANFANG DEZEMBER</strong>, damit der
             Kalender rechtzeitig vor Weihnachten bei dir ist.
@@ -227,19 +261,31 @@ export default function Home() {
       >
         <a
           href="/impressum"
-          style={{ margin: "0 1rem", textDecoration: "underline" }}
+          style={{
+            margin: "0 1rem",
+            textDecoration: "underline",
+            color: "white",
+          }}
         >
           Impressum
         </a>
         <a
           href="/datenschutz"
-          style={{ margin: "0 1rem", textDecoration: "underline" }}
+          style={{
+            margin: "0 1rem",
+            textDecoration: "underline",
+            color: "white",
+          }}
         >
           Datenschutz
         </a>
         <a
           href="/widerruf"
-          style={{ margin: "0 1rem", textDecoration: "underline" }}
+          style={{
+            margin: "0 1rem",
+            textDecoration: "underline",
+            color: "white",
+          }}
         >
           Widerruf
         </a>
