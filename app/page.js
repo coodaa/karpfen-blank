@@ -222,7 +222,6 @@ export default function Home() {
             Objekt – bewusst in LIMITIERTER AUFLAGE.
             <br />
             <br />
-            {/* (Spende-Zeile wurde entfernt) */}
             <br />
             Der Versand startet <strong>ANFANG DEZEMBER</strong>, damit der
             Kalender rechtzeitig vor Weihnachten bei dir ist.

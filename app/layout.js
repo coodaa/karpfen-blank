@@ -9,7 +9,7 @@ const anton = Anton({
 export const metadata = {
   title: "Karpfen Blank 2026 – Alternativer Kunstkalender aus Berlin",
   description:
-    "Karpfen Blank 2026 ist ein unabhängiger Kunstkalender aus Berlin. Zwölf Menschen. Ein Stoffkarpfen. Limitierte Auflage. 10 € Spende an den Berliner Kältebus.",
+    "Karpfen Blank 2026 ist ein unabhängiger Kunstkalender aus Berlin. Zwölf Menschen. Ein Stoffkarpfen. Limitierte Auflage.",
   keywords: [
     "Karpfen Kalender",
     "Berlin Kalender 2026",
@@ -23,7 +23,7 @@ export const metadata = {
   openGraph: {
     title: "Karpfen Blank 2026 – Kunstkalender aus Berlin",
     description:
-      "Ein alternativer Kalender aus Berlin. Zwölf Menschen. Ein Stoffkarpfen. Kleine Auflage, 10 € Spende an den Berliner Kältebus.",
+      "Ein alternativer Kalender aus Berlin. Zwölf Menschen. Ein Stoffkarpfen. Kleine limitierte Auflage.",
     url: "https://www.karpfen-blank.de",
     siteName: "Karpfen Blank",
     type: "website",
@@ -40,7 +40,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Karpfen Blank 2026 – Kunstkalender aus Berlin",
     description:
-      "Alternativer Berlin-Kunstkalender in kleiner Auflage. 10 € Spende an den Berliner Kältebus.",
+      "Alternativer Berlin-Kunstkalender in kleiner Auflage. Zwölf Menschen, ein Stoffkarpfen.",
     images: ["/og.jpg"],
   },
 };
@@ -60,7 +60,7 @@ export default function RootLayout({ children }) {
           position: "relative",
         }}
       >
-        {/* GLOBAL OVERLAY – für gute Lesbarkeit auf ALLEN Seiten */}
+        {/* GLOBAL BACKGROUND OVERLAY */}
         <div
           style={{
             position: "fixed",
@@ -69,9 +69,9 @@ export default function RootLayout({ children }) {
             backdropFilter: "blur(2px)",
             zIndex: -1,
           }}
-        ></div>
+        />
 
-        {/* STRUCTURED DATA: PRODUCT + ORGANIZATION */}
+        {/* SCHEMA: ORGANIZATION */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -84,6 +84,7 @@ export default function RootLayout({ children }) {
             }),
           }}
         />
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -93,7 +94,7 @@ export default function RootLayout({ children }) {
               name: "Karpfen Blank Kalender 2026",
               image: ["https://www.karpfen-blank.de/shop.png"],
               description:
-                "Limitierter Kunstkalender aus Berlin. Zwölf Motive, ein Stoffkarpfen. 10 € Spende an den Berliner Kältebus.",
+                "Limitierter Kunstkalender aus Berlin. Zwölf Motive, ein Stoffkarpfen. Hochwertige A3-Edition.",
               brand: "Karpfen Blank",
               offers: {
                 "@type": "Offer",
@@ -106,7 +107,6 @@ export default function RootLayout({ children }) {
           }}
         />
 
-        {/* PAGE CONTENT */}
         {children}
       </body>
     </html>
