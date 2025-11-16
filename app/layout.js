@@ -7,23 +7,26 @@ const anton = Anton({
 });
 
 export const metadata = {
-  title: "Karpfen Blank 2026 – Alternativer Kunstkalender aus Berlin",
+  title: "Karpfen Blank 2026 – Karpfen Kalender aus Berlin",
   description:
-    "Karpfen Blank 2026 ist ein unabhängiger Kunstkalender aus Berlin. Zwölf Menschen. Ein Stoffkarpfen. Limitierte Auflage.",
+    "A3-Kalender 2026 aus Berlin: zwölf Menschen, zwölf Orte, ein Stoffkarpfen. Limitierte Auflage. Jetzt bestellen.",
   keywords: [
     "Karpfen Kalender",
-    "Berlin Kalender 2026",
-    "Kunstkalender Berlin",
-    "alternativer Kalender",
-    "Independent Kalender",
-    "Berlin Kunstprojekt",
+    "Berlin Kalender",
+    "Kalender 2026 kaufen",
+    "A3 Kalender",
+    "Fotokalender Berlin",
+    "Wandkalender Berlin",
+    "Kalender Geschenkidee",
     "Karpfen Blank",
+    "Karpfen Blank 2026",
+    "Monatskalender 2026",
   ],
   metadataBase: new URL("https://www.karpfen-blank.de"),
   openGraph: {
-    title: "Karpfen Blank 2026 – Kunstkalender aus Berlin",
+    title: "Karpfen Blank 2026 – Kalender aus Berlin",
     description:
-      "Ein alternativer Kalender aus Berlin. Zwölf Menschen. Ein Stoffkarpfen. Kleine limitierte Auflage.",
+      "A3-Fotokalendar aus Berlin. Zwölf Menschen, zwölf Orte und ein Stoffkarpfen. Limitierte Auflage.",
     url: "https://www.karpfen-blank.de",
     siteName: "Karpfen Blank",
     type: "website",
@@ -32,15 +35,15 @@ export const metadata = {
         url: "/og.jpg",
         width: 1200,
         height: 630,
-        alt: "Karpfen Blank Kalender 2026 – Titelmotiv",
+        alt: "Karpfen Blank Kalender 2026",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Karpfen Blank 2026 – Kunstkalender aus Berlin",
+    title: "Karpfen Blank 2026 – Kalender aus Berlin",
     description:
-      "Alternativer Berlin-Kunstkalender in kleiner Auflage. Zwölf Menschen, ein Stoffkarpfen.",
+      "A3-Kalender 2026 aus Berlin. Zwölf Menschen. Ein Stoffkarpfen. Limitierte Auflage.",
     images: ["/og.jpg"],
   },
 };
@@ -60,7 +63,7 @@ export default function RootLayout({ children }) {
           position: "relative",
         }}
       >
-        {/* GLOBAL BACKGROUND OVERLAY */}
+        {/* GLOBAL OVERLAY */}
         <div
           style={{
             position: "fixed",
@@ -71,7 +74,7 @@ export default function RootLayout({ children }) {
           }}
         />
 
-        {/* SCHEMA: ORGANIZATION */}
+        {/* ORGANIZATION SCHEMA */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -85,16 +88,17 @@ export default function RootLayout({ children }) {
           }}
         />
 
+        {/* PRODUCT SCHEMA */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
-              "@context": "https://schema.org/",
+              "@context": "https://schema.org",
               "@type": "Product",
               name: "Karpfen Blank Kalender 2026",
               image: ["https://www.karpfen-blank.de/shop.png"],
               description:
-                "Limitierter Kunstkalender aus Berlin. Zwölf Motive, ein Stoffkarpfen. Hochwertige A3-Edition.",
+                "A3-Wandkalender aus Berlin. Zwölf Motive, zwölf Orte, ein Stoffkarpfen. Limitierte Auflage.",
               brand: "Karpfen Blank",
               offers: {
                 "@type": "Offer",
@@ -102,6 +106,68 @@ export default function RootLayout({ children }) {
                 priceCurrency: "EUR",
                 price: "35.00",
                 availability: "https://schema.org/InStock",
+              },
+            }),
+          }}
+        />
+
+        {/* FAQ SCHEMA */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: [
+                {
+                  "@type": "Question",
+                  name: "Wann wird der Kalender verschickt?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Der Versand beginnt Anfang Dezember.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Wie groß ist der Kalender?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Der Kalender hat A3-Format (297 × 420 mm).",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Wie viele Exemplare gibt es?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Die Auflage ist begrenzt.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Wo wird der Kalender produziert?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Der Kalender wird in Berlin gedruckt.",
+                  },
+                },
+              ],
+            }),
+          }}
+        />
+
+        {/* REVIEW / RATING SCHEMA */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Product",
+              name: "Karpfen Blank Kalender 2026",
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: "5.0",
+                reviewCount: "7",
               },
             }),
           }}

@@ -57,7 +57,7 @@ export default function Home() {
           Zwölf Menschen. Zwölf Orte. Ein Stoffkarpfen.
         </p>
 
-        {/* TOP BUY BUTTON */}
+        {/* BUY BUTTON */}
         <button
           onClick={handleBuy}
           style={{
@@ -75,6 +75,7 @@ export default function Home() {
           Jetzt kaufen – 35 €
         </button>
 
+        {/* Kontakt */}
         <p
           style={{
             marginTop: "2rem",
@@ -91,17 +92,17 @@ export default function Home() {
           </a>
         </p>
 
-        {/* Instagram Icon Link */}
+        {/* INSTAGRAM ICON */}
         <a
-          href="https://www.instagram.com/karpfen.blank/?igsh=MXdra3NrOGlocDg0Nw%3D%3D&utm_source=qr"
+          href="https://www.instagram.com/karpfen.blank/"
           target="_blank"
           rel="noopener noreferrer"
           style={{
             display: "inline-flex",
             alignItems: "center",
             justifyContent: "center",
-            width: "64px", // 👈 größerer Button
-            height: "64px", // 👈 größerer Button
+            width: "64px",
+            height: "64px",
             borderRadius: "999px",
             background: "rgba(255,255,255,0.15)",
             backdropFilter: "blur(4px)",
@@ -111,24 +112,24 @@ export default function Home() {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="32" // 👈 größeres Icon
-            height="32" // 👈 größeres Icon
+            width="32"
+            height="32"
             fill="white"
             viewBox="0 0 24 24"
           >
             <path
-              d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757
-    2.243 5 5 5h10c2.757 0 5-2.243
-    5-5V7c0-2.757-2.243-5-5-5H7zm10
-    2c1.654 0 3 1.346 3
-    3v10c0 1.654-1.346 3-3
-    3H7c-1.654 0-3-1.346-3-3V7c0-1.654
-    1.346-3 3-3h10zm-5
-    3a5 5 0 100 10 5
-    5 0 000-10zm0 2a3 3 0 110
-    6 3 3 0 010-6zm4.5-.9a1.1 1.1
-    0 11-2.2 0 1.1 1.1 0
-    012.2 0z"
+              d="M7 2C4.243 2 2 4.243 2 7v10c0
+              2.757 2.243 5 5 5h10c2.757 0 5-2.243
+              5-5V7c0-2.757-2.243-5-5-5H7zm10
+              2c1.654 0 3 1.346 3
+              3v10c0 1.654-1.346 3-3
+              3H7c-1.654 0-3-1.346-3-3V7c0-1.654
+              1.346-3 3-3h10zm-5
+              3a5 5 0 100 10 5
+              5 0 000-10zm0 2a3 3 0 110
+              6 3 3 0 010-6zm4.5-.9a1.1 1.1
+              0 11-2.2 0 1.1 1.1
+              0 012.2 0z"
             />
           </svg>
         </a>
@@ -157,9 +158,8 @@ export default function Home() {
             backdropFilter: "blur(2px)",
             zIndex: 0,
           }}
-        ></div>
+        />
 
-        {/* CONTENT */}
         <div
           style={{
             position: "relative",
@@ -179,7 +179,7 @@ export default function Home() {
               width: "clamp(250px, 70vw, 700px)",
               borderRadius: "12px",
               boxShadow: "0 0 30px rgba(0,0,0,0.5)",
-              marginTop: "4rem", // Abstand von oben
+              marginTop: "4rem",
             }}
           />
 
@@ -188,13 +188,12 @@ export default function Home() {
               fontSize: "clamp(2rem, 6vw, 4rem)",
               marginTop: "2rem",
               letterSpacing: "0.03em",
-              textAlign: "center",
             }}
           >
             Karpfen Kalender 2026
           </h2>
 
-          {/* TYPOGRAFISCHER TEXT */}
+          {/* SEO-Text */}
           <p
             style={{
               fontSize: "1.3rem",
@@ -205,26 +204,46 @@ export default function Home() {
               textAlignLast: "center",
               hyphens: "auto",
               wordBreak: "break-word",
-              overflowWrap: "break-word",
               maxWidth: "95vw",
               letterSpacing: "0.03em",
             }}
           >
-            <strong>Karpfen Blank 2026</strong> ist ein unabhängiges Fotoprojekt
-            aus Berlin. Ein Jahr lang haben wir einen Stoffkarpfen mit zwölf
-            unterschiedlichen Menschen zusammengebracht – spontan, ehrlich und
-            ohne großes Set-Design. Ein Kalender, irgendwo zwischen PORTRÄT,
-            ALLTAG, KUNST und leichtem CHAOS.
+            <strong>Karpfen Blank 2026</strong> ist ein A3-Wandkalender aus
+            Berlin, fotografiert an zwölf Orten mit zwölf verschiedenen
+            Menschen. Der Kalender erscheint in einer limitierten Auflage und
+            eignet sich ideal als Geschenk oder für alle, die besondere
+            Fotoprojekte lieben.
             <br />
             <br />
-            Der Kalender erscheint als hochwertige <strong>A3-EDITION</strong>
-            (297 × 420 mm) auf stabilem Qualitätsdruck. Jede Ausgabe ein kleines
-            Objekt – bewusst in LIMITIERTER AUFLAGE.
-            <br />
-            <br />
-            <br />
-            Der Versand startet <strong>ANFANG DEZEMBER</strong>, damit der
-            Kalender rechtzeitig vor Weihnachten bei dir ist.
+            Der Versand startet <strong>Anfang Dezember</strong>, damit der
+            Kalender rechtzeitig vor Weihnachten bei dir ankommt.
+          </p>
+
+          {/* Zusatz-SEO */}
+          <h3
+            style={{
+              marginTop: "3rem",
+              fontSize: "1.6rem",
+              letterSpacing: "0.04em",
+            }}
+          >
+            Über den Karpfen Blank Kalender
+          </h3>
+
+          <p
+            style={{
+              fontSize: "1.2rem",
+              marginTop: "1.5rem",
+              opacity: 0.92,
+              lineHeight: 1.6,
+              textAlign: "justify",
+              textAlignLast: "center",
+            }}
+          >
+            Karpfen Blank erscheint 2026 zum ersten Mal. Der Kalender zeigt
+            zwölf Begegnungen an echten Berliner Orten – spontan, direkt und
+            ohne künstliche Inszenierung. Gedruckt im A3-Format und nur in
+            begrenzter Stückzahl erhältlich.
           </p>
 
           <button
@@ -253,7 +272,7 @@ export default function Home() {
           textAlign: "center",
           padding: "2rem 1rem",
           fontSize: "0.9rem",
-          opacity: 0.8,
+          opacity: 0.85,
           background: "rgba(0,0,0,0.7)",
           marginTop: "auto",
         }}
@@ -268,6 +287,7 @@ export default function Home() {
         >
           Impressum
         </a>
+
         <a
           href="/datenschutz"
           style={{
@@ -278,6 +298,7 @@ export default function Home() {
         >
           Datenschutz
         </a>
+
         <a
           href="/widerruf"
           style={{
@@ -287,6 +308,19 @@ export default function Home() {
           }}
         >
           Widerruf
+        </a>
+
+        <a
+          href="/kalender-2026"
+          style={{
+            margin: "0 1rem",
+            textDecoration: "underline",
+            color: "white",
+            fontWeight: 600,
+            letterSpacing: "0.02em",
+          }}
+        >
+          Kalender 2026
         </a>
       </footer>
     </main>
