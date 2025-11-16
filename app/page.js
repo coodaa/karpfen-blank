@@ -320,7 +320,7 @@ export default function Home() {
             letterSpacing: "0.02em",
           }}
         >
-          Kalender 2026
+          Kalender
         </a>
       </footer>
     </main>
