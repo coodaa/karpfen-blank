@@ -1,0 +1,10 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/datenschutz/page": "app/datenschutz/page.js",
+  "/impressum/page": "app/impressum/page.js",
+  "/kalender-2026/page": "app/kalender-2026/page.js",
+  "/page": "app/page.js",
+  "/sitemap.xml/route": "app/sitemap.xml/route.js",
+  "/widerruf/page": "app/widerruf/page.js"
+}
