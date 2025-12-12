@@ -9,6 +9,7 @@
     "/_full",
     "/datenschutz/__PAGE__",
     "/datenschutz",
-    "/_index"
+    "/_index",
+    "/_head"
   ]
 }

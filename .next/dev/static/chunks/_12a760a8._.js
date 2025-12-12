@@ -31,12 +31,12 @@ function Home() {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
                 style: {
-                    height: "100vh",
+                    minHeight: "100vh",
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",
                     justifyContent: "center",
-                    padding: "0 1rem"
+                    padding: "0 1rem 4rem"
                 },
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -44,8 +44,8 @@ function Home() {
                             fontSize: "clamp(6rem, 18vw, 20rem)",
                             fontWeight: 700,
                             lineHeight: 1,
-                            textTransform: "uppercase",
                             margin: 0,
+                            textTransform: "uppercase",
                             whiteSpace: "pre-line",
                             letterSpacing: "0.05em"
                         },
@@ -63,7 +63,7 @@ function Home() {
                         style: {
                             marginTop: "2rem",
                             opacity: 0.9,
-                            fontSize: "clamp(1.1rem, 3vw, 1.6rem)"
+                            fontSize: "1.3rem"
                         },
                         children: "Zwölf Menschen. Zwölf Orte. Ein Stoffkarpfen."
                     }, void 0, false, {
@@ -78,35 +78,60 @@ function Home() {
                             color: "black",
                             border: "none",
                             borderRadius: "999px",
-                            padding: "1rem 3rem",
-                            fontSize: "1.5rem",
-                            cursor: "pointer",
+                            padding: "1.1rem 3.2rem",
                             marginTop: "2.5rem",
-                            transition: "transform 0.3s ease"
+                            display: "flex",
+                            flexDirection: "column",
+                            alignItems: "center",
+                            lineHeight: 1.2,
+                            cursor: "pointer"
                         },
-                        children: "Jetzt kaufen – 29 € (inkl. Versand DE)"
-                    }, void 0, false, {
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                style: {
+                                    fontSize: "1.5rem",
+                                    fontWeight: 600
+                                },
+                                children: "Jetzt kaufen – 29 €"
+                            }, void 0, false, {
+                                fileName: "[project]/app/page.js",
+                                lineNumber: 70,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                style: {
+                                    fontSize: "0.85rem",
+                                    opacity: 0.65
+                                },
+                                children: "inkl. Versand (DE)"
+                            }, void 0, false, {
+                                fileName: "[project]/app/page.js",
+                                lineNumber: 73,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
                         fileName: "[project]/app/page.js",
-                        lineNumber: 61,
+                        lineNumber: 54,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         style: {
                             marginTop: "1rem",
                             opacity: 0.75,
-                            fontSize: "1.1rem"
+                            fontSize: "1.25rem"
                         },
                         children: "Versand ausschließlich innerhalb Deutschlands."
                     }, void 0, false, {
                         fileName: "[project]/app/page.js",
-                        lineNumber: 79,
+                        lineNumber: 78,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         style: {
                             marginTop: "2rem",
-                            opacity: 0.8,
-                            fontSize: "1.3rem"
+                            opacity: 0.85,
+                            fontSize: "1.25rem"
                         },
                         children: [
                             "Kontakt:",
@@ -120,13 +145,13 @@ function Home() {
                                 children: "hi@karpfen-blank.de"
                             }, void 0, false, {
                                 fileName: "[project]/app/page.js",
-                                lineNumber: 98,
+                                lineNumber: 84,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/page.js",
-                        lineNumber: 90,
+                        lineNumber: 82,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -134,16 +159,15 @@ function Home() {
                         target: "_blank",
                         rel: "noopener noreferrer",
                         style: {
-                            display: "inline-flex",
-                            alignItems: "center",
-                            justifyContent: "center",
+                            marginTop: "3rem",
                             width: "64px",
                             height: "64px",
                             borderRadius: "999px",
                             background: "rgba(255,255,255,0.15)",
                             backdropFilter: "blur(4px)",
-                            marginTop: "2rem",
-                            textDecoration: "none"
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center"
                         },
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                             xmlns: "http://www.w3.org/2000/svg",
@@ -155,17 +179,17 @@ function Home() {
                                 d: "M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-.9a1.1 1.1 0 11-2.2 0 1.1 1.1 0 012.2 0z"
                             }, void 0, false, {
                                 fileName: "[project]/app/page.js",
-                                lineNumber: 131,
+                                lineNumber: 116,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/page.js",
-                            lineNumber: 124,
+                            lineNumber: 109,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/page.js",
-                        lineNumber: 107,
+                        lineNumber: 93,
                         columnNumber: 9
                     }, this)
                 ]
@@ -178,13 +202,10 @@ function Home() {
                 style: {
                     minHeight: "100vh",
                     width: "100%",
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    padding: "3rem 1rem",
+                    padding: "4rem 1rem",
                     position: "relative",
-                    color: "white"
+                    display: "flex",
+                    justifyContent: "center"
                 },
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -192,21 +213,18 @@ function Home() {
                             position: "absolute",
                             inset: 0,
                             background: "rgba(0,0,0,0.55)",
-                            backdropFilter: "blur(2px)",
-                            zIndex: 0
+                            backdropFilter: "blur(2px)"
                         }
                     }, void 0, false, {
                         fileName: "[project]/app/page.js",
-                        lineNumber: 164,
+                        lineNumber: 145,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         style: {
                             position: "relative",
-                            zIndex: 1,
                             maxWidth: "900px",
                             width: "100%",
-                            padding: "0 1.5rem",
                             display: "flex",
                             flexDirection: "column",
                             alignItems: "center"
@@ -218,56 +236,50 @@ function Home() {
                                 style: {
                                     width: "clamp(250px, 70vw, 700px)",
                                     borderRadius: "12px",
-                                    boxShadow: "0 0 30px rgba(0,0,0,0.5)",
-                                    marginTop: "4rem"
+                                    boxShadow: "0 0 30px rgba(0,0,0,0.5)"
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/app/page.js",
-                                lineNumber: 186,
+                                lineNumber: 164,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                 style: {
                                     fontSize: "clamp(2rem, 6vw, 4rem)",
-                                    marginTop: "2rem",
-                                    letterSpacing: "0.03em"
+                                    marginTop: "2rem"
                                 },
                                 children: "Karpfen Kalender 2026"
                             }, void 0, false, {
                                 fileName: "[project]/app/page.js",
-                                lineNumber: 197,
+                                lineNumber: 174,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 style: {
-                                    fontSize: "1.3rem",
+                                    fontSize: "1.25rem",
                                     marginTop: "2rem",
                                     lineHeight: 1.7,
                                     opacity: 0.95,
                                     textAlign: "justify",
-                                    textAlignLast: "center",
-                                    hyphens: "auto",
-                                    wordBreak: "break-word",
-                                    maxWidth: "95vw",
-                                    letterSpacing: "0.03em"
+                                    textAlignLast: "center"
                                 },
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
                                         children: "Karpfen Blank 2026"
                                     }, void 0, false, {
                                         fileName: "[project]/app/page.js",
-                                        lineNumber: 222,
+                                        lineNumber: 189,
                                         columnNumber: 13
                                     }, this),
                                     " ist ein A3-Wandkalender aus Berlin, fotografiert an zwölf Orten mit zwölf verschiedenen Menschen. Der Kalender erscheint in einer limitierten Auflage und eignet sich ideal als Geschenk oder für alle, die besondere Fotoprojekte lieben.",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                         fileName: "[project]/app/page.js",
-                                        lineNumber: 227,
+                                        lineNumber: 194,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                         fileName: "[project]/app/page.js",
-                                        lineNumber: 228,
+                                        lineNumber: 195,
                                         columnNumber: 13
                                     }, this),
                                     "Der Versand startet ",
@@ -275,18 +287,18 @@ function Home() {
                                         children: "Anfang Dezember"
                                     }, void 0, false, {
                                         fileName: "[project]/app/page.js",
-                                        lineNumber: 229,
+                                        lineNumber: 196,
                                         columnNumber: 33
                                     }, this),
                                     ", damit der Kalender rechtzeitig vor Weihnachten bei dir ankommt.",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                         fileName: "[project]/app/page.js",
-                                        lineNumber: 231,
+                                        lineNumber: 198,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                         fileName: "[project]/app/page.js",
-                                        lineNumber: 232,
+                                        lineNumber: 199,
                                         columnNumber: 13
                                     }, this),
                                     "Preis: ",
@@ -294,62 +306,40 @@ function Home() {
                                         children: "29 € inkl. Versand innerhalb Deutschlands"
                                     }, void 0, false, {
                                         fileName: "[project]/app/page.js",
-                                        lineNumber: 233,
+                                        lineNumber: 200,
                                         columnNumber: 20
                                     }, this),
-                                    ". Wir versenden ausschließlich innerhalb Deutschlands."
+                                    "."
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/page.js",
-                                lineNumber: 208,
+                                lineNumber: 179,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                 style: {
                                     marginTop: "3rem",
-                                    fontSize: "1.6rem",
-                                    letterSpacing: "0.04em"
+                                    fontSize: "1.6rem"
                                 },
                                 children: "Über den Karpfen Blank Kalender"
                             }, void 0, false, {
                                 fileName: "[project]/app/page.js",
-                                lineNumber: 238,
+                                lineNumber: 203,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 style: {
-                                    fontSize: "1.2rem",
+                                    fontSize: "1.25rem",
                                     marginTop: "1.5rem",
-                                    opacity: 0.92,
                                     lineHeight: 1.6,
+                                    opacity: 0.9,
                                     textAlign: "justify",
                                     textAlignLast: "center"
                                 },
-                                children: [
-                                    "Karpfen Blank erscheint 2026 zum ersten Mal. Der Kalender zeigt zwölf Begegnungen an echten Berliner Orten – spontan, direkt und ohne künstliche Inszenierung. Gedruckt im A3-Format und nur in begrenzter Stückzahl erhältlich.",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
-                                        fileName: "[project]/app/page.js",
-                                        lineNumber: 262,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
-                                        fileName: "[project]/app/page.js",
-                                        lineNumber: 263,
-                                        columnNumber: 13
-                                    }, this),
-                                    "Preis: ",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                        children: "29 € inkl. Versand innerhalb Deutschlands"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/page.js",
-                                        lineNumber: 264,
-                                        columnNumber: 20
-                                    }, this),
-                                    ". Kein internationaler Versand."
-                                ]
-                            }, void 0, true, {
+                                children: "Karpfen Blank erscheint 2026 zum ersten Mal. Der Kalender zeigt zwölf Begegnungen an echten Berliner Orten – spontan, direkt und ohne künstliche Inszenierung. Gedruckt im A3-Format und nur in begrenzter Stückzahl erhältlich."
+                            }, void 0, false, {
                                 fileName: "[project]/app/page.js",
-                                lineNumber: 248,
+                                lineNumber: 207,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -361,26 +351,25 @@ function Home() {
                                     borderRadius: "999px",
                                     padding: "1rem 3rem",
                                     fontSize: "1.3rem",
-                                    cursor: "pointer",
                                     marginTop: "2.5rem",
-                                    transition: "transform 0.3s ease"
+                                    cursor: "pointer"
                                 },
-                                children: "Jetzt kaufen – 29 € (inkl. Versand DE)"
+                                children: "Jetzt kaufen – 29 €"
                             }, void 0, false, {
                                 fileName: "[project]/app/page.js",
-                                lineNumber: 268,
+                                lineNumber: 223,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/page.js",
-                        lineNumber: 174,
+                        lineNumber: 154,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/page.js",
-                lineNumber: 150,
+                lineNumber: 135,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
@@ -390,68 +379,49 @@ function Home() {
                     padding: "2rem 1rem",
                     fontSize: "0.9rem",
                     opacity: 0.85,
-                    background: "rgba(0,0,0,0.7)",
-                    marginTop: "auto"
+                    background: "rgba(0,0,0,0.7)"
                 },
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                         href: "/impressum",
                         style: {
                             margin: "0 1rem",
-                            textDecoration: "underline",
                             color: "white"
                         },
                         children: "Impressum"
                     }, void 0, false, {
                         fileName: "[project]/app/page.js",
-                        lineNumber: 299,
+                        lineNumber: 252,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                         href: "/datenschutz",
                         style: {
                             margin: "0 1rem",
-                            textDecoration: "underline",
                             color: "white"
                         },
                         children: "Datenschutz"
                     }, void 0, false, {
                         fileName: "[project]/app/page.js",
-                        lineNumber: 310,
+                        lineNumber: 255,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                         href: "/widerruf",
                         style: {
                             margin: "0 1rem",
-                            textDecoration: "underline",
                             color: "white"
                         },
                         children: "Widerruf"
                     }, void 0, false, {
                         fileName: "[project]/app/page.js",
-                        lineNumber: 321,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                        href: "/kalender-2026",
-                        style: {
-                            margin: "0 1rem",
-                            textDecoration: "underline",
-                            color: "white",
-                            fontWeight: 600,
-                            letterSpacing: "0.02em"
-                        },
-                        children: "Kalender"
-                    }, void 0, false, {
-                        fileName: "[project]/app/page.js",
-                        lineNumber: 332,
+                        lineNumber: 258,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/page.js",
-                lineNumber: 288,
+                lineNumber: 242,
                 columnNumber: 7
             }, this)
         ]
@@ -460,7 +430,7 @@ function Home() {
         lineNumber: 9,
         columnNumber: 5
     }, this);
-} // sdf/
+}
 _c = Home;
 var _c;
 __turbopack_context__.k.register(_c, "Home");

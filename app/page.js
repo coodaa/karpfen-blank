@@ -22,15 +22,15 @@ export default function Home() {
         overflowX: "hidden",
       }}
     >
-      {/* HERO SECTION */}
+      {/* HERO */}
       <section
         style={{
-          height: "100vh",
+          minHeight: "100vh",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          padding: "0 1rem",
+          padding: "0 1rem 4rem",
         }}
       >
         <h1
@@ -38,8 +38,8 @@ export default function Home() {
             fontSize: "clamp(6rem, 18vw, 20rem)",
             fontWeight: 700,
             lineHeight: 1,
-            textTransform: "uppercase",
             margin: 0,
+            textTransform: "uppercase",
             whiteSpace: "pre-line",
             letterSpacing: "0.05em",
           }}
@@ -47,17 +47,10 @@ export default function Home() {
           Karpfen{"\n"}Blank
         </h1>
 
-        <p
-          style={{
-            marginTop: "2rem",
-            opacity: 0.9,
-            fontSize: "clamp(1.1rem, 3vw, 1.6rem)",
-          }}
-        >
+        <p style={{ marginTop: "2rem", opacity: 0.9, fontSize: "1.3rem" }}>
           Zwölf Menschen. Zwölf Orte. Ein Stoffkarpfen.
         </p>
 
-        {/* BUY BUTTON */}
         <button
           onClick={handleBuy}
           style={{
@@ -65,35 +58,28 @@ export default function Home() {
             color: "black",
             border: "none",
             borderRadius: "999px",
-            padding: "1rem 3rem",
-            fontSize: "1.5rem",
-            cursor: "pointer",
+            padding: "1.1rem 3.2rem",
             marginTop: "2.5rem",
-            transition: "transform 0.3s ease",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            lineHeight: 1.2,
+            cursor: "pointer",
           }}
         >
-          Jetzt kaufen – 29 € (inkl. Versand DE)
+          <span style={{ fontSize: "1.5rem", fontWeight: 600 }}>
+            Jetzt kaufen – 29 €
+          </span>
+          <span style={{ fontSize: "0.85rem", opacity: 0.65 }}>
+            inkl. Versand (DE)
+          </span>
         </button>
 
-        {/* Versandinfo */}
-        <p
-          style={{
-            marginTop: "1rem",
-            opacity: 0.75,
-            fontSize: "1.1rem",
-          }}
-        >
+        <p style={{ marginTop: "1rem", opacity: 0.75, fontSize: "1.25rem" }}>
           Versand ausschließlich innerhalb Deutschlands.
         </p>
 
-        {/* Kontakt */}
-        <p
-          style={{
-            marginTop: "2rem",
-            opacity: 0.8,
-            fontSize: "1.3rem",
-          }}
-        >
+        <p style={{ marginTop: "2rem", opacity: 0.85, fontSize: "1.25rem" }}>
           Kontakt:{" "}
           <a
             href="mailto:hi@karpfen-blank.de"
@@ -103,22 +89,21 @@ export default function Home() {
           </a>
         </p>
 
-        {/* INSTAGRAM ICON */}
+        {/* INSTAGRAM */}
         <a
           href="https://www.instagram.com/karpfen.blank/"
           target="_blank"
           rel="noopener noreferrer"
           style={{
-            display: "inline-flex",
-            alignItems: "center",
-            justifyContent: "center",
+            marginTop: "3rem",
             width: "64px",
             height: "64px",
             borderRadius: "999px",
             background: "rgba(255,255,255,0.15)",
             backdropFilter: "blur(4px)",
-            marginTop: "2rem",
-            textDecoration: "none",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
           }}
         >
           <svg
@@ -146,38 +131,31 @@ export default function Home() {
         </a>
       </section>
 
-      {/* SHOP SECTION */}
+      {/* SHOP + TEXT */}
       <section
         style={{
           minHeight: "100vh",
           width: "100%",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-          padding: "3rem 1rem",
+          padding: "4rem 1rem",
           position: "relative",
-          color: "white",
+          display: "flex",
+          justifyContent: "center",
         }}
       >
-        {/* Overlay */}
         <div
           style={{
             position: "absolute",
             inset: 0,
             background: "rgba(0,0,0,0.55)",
             backdropFilter: "blur(2px)",
-            zIndex: 0,
           }}
         />
 
         <div
           style={{
             position: "relative",
-            zIndex: 1,
             maxWidth: "900px",
             width: "100%",
-            padding: "0 1.5rem",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
@@ -190,33 +168,22 @@ export default function Home() {
               width: "clamp(250px, 70vw, 700px)",
               borderRadius: "12px",
               boxShadow: "0 0 30px rgba(0,0,0,0.5)",
-              marginTop: "4rem",
             }}
           />
 
-          <h2
-            style={{
-              fontSize: "clamp(2rem, 6vw, 4rem)",
-              marginTop: "2rem",
-              letterSpacing: "0.03em",
-            }}
-          >
+          <h2 style={{ fontSize: "clamp(2rem, 6vw, 4rem)", marginTop: "2rem" }}>
             Karpfen Kalender 2026
           </h2>
 
-          {/* SEO-Text */}
+          {/* ✅ KOMPLETTER TEXT */}
           <p
             style={{
-              fontSize: "1.3rem",
+              fontSize: "1.25rem",
               marginTop: "2rem",
               lineHeight: 1.7,
               opacity: 0.95,
               textAlign: "justify",
               textAlignLast: "center",
-              hyphens: "auto",
-              wordBreak: "break-word",
-              maxWidth: "95vw",
-              letterSpacing: "0.03em",
             }}
           >
             <strong>Karpfen Blank 2026</strong> ist ein A3-Wandkalender aus
@@ -231,26 +198,18 @@ export default function Home() {
             <br />
             <br />
             Preis: <strong>29 € inkl. Versand innerhalb Deutschlands</strong>.
-            Wir versenden ausschließlich innerhalb Deutschlands.
           </p>
 
-          {/* Zusatz-SEO */}
-          <h3
-            style={{
-              marginTop: "3rem",
-              fontSize: "1.6rem",
-              letterSpacing: "0.04em",
-            }}
-          >
+          <h3 style={{ marginTop: "3rem", fontSize: "1.6rem" }}>
             Über den Karpfen Blank Kalender
           </h3>
 
           <p
             style={{
-              fontSize: "1.2rem",
+              fontSize: "1.25rem",
               marginTop: "1.5rem",
-              opacity: 0.92,
               lineHeight: 1.6,
+              opacity: 0.9,
               textAlign: "justify",
               textAlignLast: "center",
             }}
@@ -259,10 +218,6 @@ export default function Home() {
             zwölf Begegnungen an echten Berliner Orten – spontan, direkt und
             ohne künstliche Inszenierung. Gedruckt im A3-Format und nur in
             begrenzter Stückzahl erhältlich.
-            <br />
-            <br />
-            Preis: <strong>29 € inkl. Versand innerhalb Deutschlands</strong>.
-            Kein internationaler Versand.
           </p>
 
           <button
@@ -274,12 +229,11 @@ export default function Home() {
               borderRadius: "999px",
               padding: "1rem 3rem",
               fontSize: "1.3rem",
-              cursor: "pointer",
               marginTop: "2.5rem",
-              transition: "transform 0.3s ease",
+              cursor: "pointer",
             }}
           >
-            Jetzt kaufen – 29 € (inkl. Versand DE)
+            Jetzt kaufen – 29 €
           </button>
         </div>
       </section>
@@ -293,56 +247,18 @@ export default function Home() {
           fontSize: "0.9rem",
           opacity: 0.85,
           background: "rgba(0,0,0,0.7)",
-          marginTop: "auto",
         }}
       >
-        <a
-          href="/impressum"
-          style={{
-            margin: "0 1rem",
-            textDecoration: "underline",
-            color: "white",
-          }}
-        >
+        <a href="/impressum" style={{ margin: "0 1rem", color: "white" }}>
           Impressum
         </a>
-
-        <a
-          href="/datenschutz"
-          style={{
-            margin: "0 1rem",
-            textDecoration: "underline",
-            color: "white",
-          }}
-        >
+        <a href="/datenschutz" style={{ margin: "0 1rem", color: "white" }}>
           Datenschutz
         </a>
-
-        <a
-          href="/widerruf"
-          style={{
-            margin: "0 1rem",
-            textDecoration: "underline",
-            color: "white",
-          }}
-        >
+        <a href="/widerruf" style={{ margin: "0 1rem", color: "white" }}>
           Widerruf
-        </a>
-
-        <a
-          href="/kalender-2026"
-          style={{
-            margin: "0 1rem",
-            textDecoration: "underline",
-            color: "white",
-            fontWeight: 600,
-            letterSpacing: "0.02em",
-          }}
-        >
-          Kalender
         </a>
       </footer>
     </main>
   );
 }
-// sdf/
