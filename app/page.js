@@ -113,20 +113,7 @@ export default function Home() {
             fill="white"
             viewBox="0 0 24 24"
           >
-            <path
-              d="M7 2C4.243 2 2 4.243 2 7v10c0
-              2.757 2.243 5 5 5h10c2.757 0 5-2.243
-              5-5V7c0-2.757-2.243-5-5-5H7zm10
-              2c1.654 0 3 1.346 3
-              3v10c0 1.654-1.346 3-3
-              3H7c-1.654 0-3-1.346-3-3V7c0-1.654
-              1.346-3 3-3h10zm-5
-              3a5 5 0 100 10 5
-              5 0 000-10zm0 2a3 3 0 110
-              6 3 3 0 010-6zm4.5-.9a1.1 1.1
-              0 11-2.2 0 1.1 1.1
-              0 012.2 0z"
-            />
+            <path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-.9a1.1 1.1 0 11-2.2 0 1.1 1.1 0 012.2 0z" />
           </svg>
         </a>
       </section>
@@ -175,7 +162,7 @@ export default function Home() {
             Karpfen Kalender 2026
           </h2>
 
-          {/* ✅ KOMPLETTER TEXT */}
+          {/* PRODUKTBESCHREIBUNG */}
           <p
             style={{
               fontSize: "1.25rem",
@@ -187,23 +174,21 @@ export default function Home() {
             }}
           >
             <strong>Karpfen Blank 2026</strong> ist ein A3-Wandkalender aus
-            Berlin, fotografiert an zwölf Orten mit zwölf verschiedenen
-            Menschen. Der Kalender erscheint in einer limitierten Auflage und
-            eignet sich ideal als Geschenk oder für alle, die besondere
-            Fotoprojekte lieben.
+            Berlin. Zwölf Fotografien, aufgenommen an zwölf verschiedenen Orten
+            mit zwölf Menschen. Der Kalender erscheint in einer limitierten
+            Auflage und eignet sich ideal als Geschenk oder für alle, die
+            besondere Fotoprojekte schätzen.
             <br />
             <br />
-            Der Versand startet <strong>Anfang Dezember</strong>, damit der
-            Kalender rechtzeitig vor Weihnachten bei dir ankommt.
-            <br />
-            <br />
-            Preis: <strong>29 € inkl. Versand innerhalb Deutschlands</strong>.
+            Bei Bestellung bis zum <strong>20.12.</strong> kommt der Kalender
+            rechtzeitig vor Weihnachten bei dir an.
           </p>
 
           <h3 style={{ marginTop: "3rem", fontSize: "1.6rem" }}>
             Über den Karpfen Blank Kalender
           </h3>
 
+          {/* PROJEKT / IDEE */}
           <p
             style={{
               fontSize: "1.25rem",
@@ -214,10 +199,14 @@ export default function Home() {
               textAlignLast: "center",
             }}
           >
-            Karpfen Blank erscheint 2026 zum ersten Mal. Der Kalender zeigt
-            zwölf Begegnungen an echten Berliner Orten – spontan, direkt und
-            ohne künstliche Inszenierung. Gedruckt im A3-Format und nur in
-            begrenzter Stückzahl erhältlich.
+            Karpfen Blank entsteht aus Begegnungen. Der Stoffkarpfen reist durch
+            Berlin und taucht dort auf, wo Menschen bereit sind, sich auf den
+            Moment einzulassen. Ohne Inszenierung, ohne Kulisse – direkt,
+            zufällig, echt.
+            <br />
+            <br />
+            Der Kalender erscheint 2026 zum ersten Mal und wird ausschließlich
+            in kleiner Stückzahl produziert.
           </p>
 
           <button

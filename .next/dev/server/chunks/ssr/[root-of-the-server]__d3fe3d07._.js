@@ -223,7 +223,7 @@ function Home() {
                         }
                     }, void 0, false, {
                         fileName: "[project]/app/page.js",
-                        lineNumber: 145,
+                        lineNumber: 132,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -246,7 +246,7 @@ function Home() {
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/app/page.js",
-                                lineNumber: 164,
+                                lineNumber: 151,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -257,7 +257,7 @@ function Home() {
                                 children: "Karpfen Kalender 2026"
                             }, void 0, false, {
                                 fileName: "[project]/app/page.js",
-                                lineNumber: 174,
+                                lineNumber: 161,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -274,52 +274,33 @@ function Home() {
                                         children: "Karpfen Blank 2026"
                                     }, void 0, false, {
                                         fileName: "[project]/app/page.js",
-                                        lineNumber: 189,
+                                        lineNumber: 176,
                                         columnNumber: 13
                                     }, this),
-                                    " ist ein A3-Wandkalender aus Berlin, fotografiert an zwölf Orten mit zwölf verschiedenen Menschen. Der Kalender erscheint in einer limitierten Auflage und eignet sich ideal als Geschenk oder für alle, die besondere Fotoprojekte lieben.",
+                                    " ist ein A3-Wandkalender aus Berlin. Zwölf Fotografien, aufgenommen an zwölf verschiedenen Orten mit zwölf Menschen. Der Kalender erscheint in einer limitierten Auflage und eignet sich ideal als Geschenk oder für alle, die besondere Fotoprojekte schätzen.",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                         fileName: "[project]/app/page.js",
-                                        lineNumber: 194,
+                                        lineNumber: 181,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                         fileName: "[project]/app/page.js",
-                                        lineNumber: 195,
+                                        lineNumber: 182,
                                         columnNumber: 13
                                     }, this),
-                                    "Der Versand startet ",
+                                    "Bei Bestellung bis zum ",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                        children: "Anfang Dezember"
+                                        children: "20.12."
                                     }, void 0, false, {
                                         fileName: "[project]/app/page.js",
-                                        lineNumber: 196,
-                                        columnNumber: 33
+                                        lineNumber: 183,
+                                        columnNumber: 36
                                     }, this),
-                                    ", damit der Kalender rechtzeitig vor Weihnachten bei dir ankommt.",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
-                                        fileName: "[project]/app/page.js",
-                                        lineNumber: 198,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
-                                        fileName: "[project]/app/page.js",
-                                        lineNumber: 199,
-                                        columnNumber: 13
-                                    }, this),
-                                    "Preis: ",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                        children: "29 € inkl. Versand innerhalb Deutschlands"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/page.js",
-                                        lineNumber: 200,
-                                        columnNumber: 20
-                                    }, this),
-                                    "."
+                                    " kommt der Kalender rechtzeitig vor Weihnachten bei dir an."
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/page.js",
-                                lineNumber: 179,
+                                lineNumber: 166,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -330,7 +311,7 @@ function Home() {
                                 children: "Über den Karpfen Blank Kalender"
                             }, void 0, false, {
                                 fileName: "[project]/app/page.js",
-                                lineNumber: 203,
+                                lineNumber: 187,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -342,10 +323,23 @@ function Home() {
                                     textAlign: "justify",
                                     textAlignLast: "center"
                                 },
-                                children: "Karpfen Blank erscheint 2026 zum ersten Mal. Der Kalender zeigt zwölf Begegnungen an echten Berliner Orten – spontan, direkt und ohne künstliche Inszenierung. Gedruckt im A3-Format und nur in begrenzter Stückzahl erhältlich."
-                            }, void 0, false, {
+                                children: [
+                                    "Karpfen Blank entsteht aus Begegnungen. Der Stoffkarpfen reist durch Berlin und taucht dort auf, wo Menschen bereit sind, sich auf den Moment einzulassen. Ohne Inszenierung, ohne Kulisse – direkt, zufällig, echt.",
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                        fileName: "[project]/app/page.js",
+                                        lineNumber: 206,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                        fileName: "[project]/app/page.js",
+                                        lineNumber: 207,
+                                        columnNumber: 13
+                                    }, this),
+                                    "Der Kalender erscheint 2026 zum ersten Mal und wird ausschließlich in kleiner Stückzahl produziert."
+                                ]
+                            }, void 0, true, {
                                 fileName: "[project]/app/page.js",
-                                lineNumber: 207,
+                                lineNumber: 192,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -363,19 +357,19 @@ function Home() {
                                 children: "Jetzt kaufen – 29 €"
                             }, void 0, false, {
                                 fileName: "[project]/app/page.js",
-                                lineNumber: 223,
+                                lineNumber: 212,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/page.js",
-                        lineNumber: 154,
+                        lineNumber: 141,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/page.js",
-                lineNumber: 135,
+                lineNumber: 122,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
@@ -397,7 +391,7 @@ function Home() {
                         children: "Impressum"
                     }, void 0, false, {
                         fileName: "[project]/app/page.js",
-                        lineNumber: 252,
+                        lineNumber: 241,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -409,7 +403,7 @@ function Home() {
                         children: "Datenschutz"
                     }, void 0, false, {
                         fileName: "[project]/app/page.js",
-                        lineNumber: 255,
+                        lineNumber: 244,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -421,13 +415,13 @@ function Home() {
                         children: "Widerruf"
                     }, void 0, false, {
                         fileName: "[project]/app/page.js",
-                        lineNumber: 258,
+                        lineNumber: 247,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/page.js",
-                lineNumber: 242,
+                lineNumber: 231,
                 columnNumber: 7
             }, this)
         ]
