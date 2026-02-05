@@ -155,7 +155,7 @@ function Home() {
                         style: {
                             fontSize: "clamp(4.2rem, 14vw, 16rem)",
                             fontWeight: 900,
-                            lineHeight: 0.85,
+                            lineHeight: 1,
                             margin: 0,
                             textTransform: "uppercase",
                             whiteSpace: "pre-line",
@@ -214,7 +214,7 @@ function Home() {
                                             fontWeight: 900
                                         },
                                         className: "jsx-a46a1dde0baf7fb2",
-                                        children: "Dann jetzt: billig."
+                                        children: " Deshalb: SALE!"
                                     }, void 0, false, {
                                         fileName: "[project]/app/page.js",
                                         lineNumber: 214,

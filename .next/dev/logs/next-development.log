@@ -11,3 +11,35 @@
 [00:42:38.492] Server  LOG      ✓ Compiled in 18ms
 [00:42:42.948] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
 [00:43:11.150] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:00:01.604] Server  LOG      ✓ Compiled in 20ms
+[01:00:03.058] Server  LOG      ✓ Compiled in 10ms
+[01:00:26.220] Server  LOG      ✓ Compiled in 17ms
+[01:00:38.760] Server  LOG      ✓ Compiled in 15ms
+[01:00:43.285] Server  LOG      ✓ Compiled in 16ms
+[01:00:45.831] Server  LOG      ✓ Compiled in 14ms
+[01:00:50.370] Server  LOG      ✓ Compiled in 14ms
+[01:01:01.987] Server  LOG      ✓ Compiled in 16ms
+[01:01:15.323] Server  LOG      ✓ Compiled in 20ms
+[01:01:21.078] Server  LOG      ✓ Compiled in 11ms
+[01:01:24.894] Server  LOG      ✓ Compiled in 44ms
+[01:01:25.022] Browser ERROR   ./app/page.js:214:57
+Parsing ecmascript source code failed
+  212 |           <p style={{ margin: "0.75rem 0 0", fontSize: "1.25rem" }}>
+  213 |             Neues Jahr schon halb vorbei?{" "}
+> 214 |             <strong style={{ fontWeight: 900 }}> Deshalb> SALE.</strong>
+      |                                                         ^
+  215 |           </p>
+  216 |
+  217 |           {/* ULTRA CTA */}
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+
+Import traces:
+  Client Component Browser:
+    ./app/page.js [Client Component Browser]
+    ./app/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/page.js [Client Component SSR]
+    ./app/page.js [Server Component]
+[01:01:32.662] Server  LOG      ✓ Compiled in 14ms

@@ -177,7 +177,7 @@ export default function Home() {
           style={{
             fontSize: "clamp(4.2rem, 14vw, 16rem)",
             fontWeight: 900,
-            lineHeight: 0.85,
+            lineHeight: 1,
             margin: 0,
             textTransform: "uppercase",
             whiteSpace: "pre-line",
@@ -211,7 +211,7 @@ export default function Home() {
 
           <p style={{ margin: "0.75rem 0 0", fontSize: "1.25rem" }}>
             Neues Jahr schon halb vorbei?{" "}
-            <strong style={{ fontWeight: 900 }}>Dann jetzt: billig.</strong>
+            <strong style={{ fontWeight: 900 }}> Deshalb: SALE!</strong>
           </p>
 
           {/* ULTRA CTA */}
