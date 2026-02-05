@@ -22,72 +22,289 @@ export default function Home() {
         overflowX: "hidden",
       }}
     >
+      {/* GLOBAL STYLES (ANIMATIONS + MOBILE FIXES) */}
+      <style jsx global>{`
+        @keyframes wiggle {
+          0% {
+            transform: rotate(-10deg) translateY(0);
+          }
+          50% {
+            transform: rotate(-8deg) translateY(-2px);
+          }
+          100% {
+            transform: rotate(-10deg) translateY(0);
+          }
+        }
+        @keyframes floaty {
+          0% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(-6px);
+          }
+          100% {
+            transform: translateY(0);
+          }
+        }
+        @keyframes shine {
+          0% {
+            transform: translateX(-120%) rotate(18deg);
+            opacity: 0;
+          }
+          15% {
+            opacity: 0.35;
+          }
+          45% {
+            opacity: 0.25;
+          }
+          70% {
+            opacity: 0;
+          }
+          100% {
+            transform: translateX(220%) rotate(18deg);
+            opacity: 0;
+          }
+        }
+        @keyframes pulseRing {
+          0% {
+            box-shadow: 0 0 0 0 rgba(255, 122, 0, 0.55);
+          }
+          70% {
+            box-shadow: 0 0 0 22px rgba(255, 122, 0, 0);
+          }
+          100% {
+            box-shadow: 0 0 0 0 rgba(255, 122, 0, 0);
+          }
+        }
+
+        @media (max-width: 520px) {
+          .heroCard {
+            padding: 1.1rem 1rem 1.3rem !important;
+            border-radius: 22px !important;
+          }
+          .ctaBtn {
+            width: 100% !important;
+            padding: 1.15rem 1.2rem !important;
+          }
+          .ctaMain {
+            font-size: 1.25rem !important;
+          }
+        }
+      `}</style>
+
+      {/* HERO OVERLAY (makes everything pop + readable) */}
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          background:
+            "radial-gradient(1200px 700px at 50% 60%, rgba(0,0,0,0.10), rgba(0,0,0,0.65) 55%, rgba(0,0,0,0.85) 100%), linear-gradient(135deg, rgba(255,80,80,0.20), rgba(255,150,0,0.18))",
+          pointerEvents: "none",
+        }}
+      />
+
+      {/* SALE STICKER – comic-ish */}
+      <div
+        style={{
+          position: "fixed",
+          top: "calc(env(safe-area-inset-top, 0px) + 18px)",
+          left: "18px",
+          zIndex: 50,
+          transform: "rotate(-10deg)",
+          animation: "wiggle 1.8s ease-in-out infinite",
+          filter: "drop-shadow(0 12px 22px rgba(0,0,0,0.45))",
+        }}
+      >
+        <div
+          style={{
+            background:
+              "linear-gradient(135deg, rgba(255,255,255,0.95), rgba(255,255,255,0.85))",
+            color: "black",
+            borderRadius: "18px",
+            padding: "0.85rem 1.05rem",
+            border: "2px solid rgba(0,0,0,0.15)",
+            position: "relative",
+            overflow: "hidden",
+          }}
+        >
+          <div style={{ fontWeight: 950, letterSpacing: "0.06em" }}>
+            🔥 SALE
+          </div>
+          <div
+            style={{
+              fontSize: "1.15rem",
+              fontWeight: 950,
+              marginTop: "0.1rem",
+            }}
+          >
+            19,99 €
+          </div>
+          <div style={{ fontSize: "0.78rem", opacity: 0.75, fontWeight: 700 }}>
+            inkl. Versand (DE)
+          </div>
+
+          {/* tiny sparkles */}
+          <div
+            style={{
+              position: "absolute",
+              right: "-16px",
+              top: "-16px",
+              width: "48px",
+              height: "48px",
+              background: "rgba(255,90,0,0.18)",
+              borderRadius: "999px",
+            }}
+          />
+        </div>
+      </div>
+
       {/* HERO */}
       <section
         style={{
-          minHeight: "100vh",
+          minHeight: "100svh",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
           padding: "0 1rem 4rem",
+          paddingTop: "clamp(2rem, 6vh, 6rem)",
+          position: "relative",
+          width: "100%",
         }}
       >
+        {/* BIG TITLE with pop shadow */}
         <h1
           style={{
-            fontSize: "clamp(6rem, 18vw, 20rem)",
-            fontWeight: 700,
-            lineHeight: 1,
+            fontSize: "clamp(4.2rem, 14vw, 16rem)",
+            fontWeight: 900,
+            lineHeight: 0.85,
             margin: 0,
             textTransform: "uppercase",
             whiteSpace: "pre-line",
-            letterSpacing: "0.05em",
+            letterSpacing: "0.03em",
+            textShadow: "0 18px 45px rgba(0,0,0,0.55), 0 2px 0 rgba(0,0,0,0.2)",
           }}
         >
           Karpfen{"\n"}Blank
         </h1>
 
-        <p style={{ marginTop: "2rem", opacity: 0.9, fontSize: "1.3rem" }}>
-          Zwölf Menschen. Zwölf Orte. Ein Stoffkarpfen.
-        </p>
-
-        <button
-          onClick={handleBuy}
+        {/* GLASS CARD = the “ad panel” */}
+        <div
+          className="heroCard"
           style={{
-            background: "white",
-            color: "black",
-            border: "none",
-            borderRadius: "999px",
-            padding: "1.1rem 3.2rem",
-            marginTop: "2.5rem",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            lineHeight: 1.2,
-            cursor: "pointer",
+            marginTop: "2.2rem",
+            width: "min(820px, 92vw)",
+            borderRadius: "28px",
+            background:
+              "linear-gradient(135deg, rgba(255,255,255,0.16), rgba(255,255,255,0.08))",
+            border: "1px solid rgba(255,255,255,0.22)",
+            boxShadow:
+              "0 24px 70px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.18)",
+            backdropFilter: "blur(10px)",
+            padding: "1.35rem 1.4rem 1.6rem",
+            animation: "floaty 4s ease-in-out infinite",
           }}
         >
-          <span style={{ fontSize: "1.5rem", fontWeight: 600 }}>
-            Jetzt kaufen – 29 €
-          </span>
-          <span style={{ fontSize: "0.85rem", opacity: 0.65 }}>
-            inkl. Versand (DE)
-          </span>
-        </button>
+          <p style={{ margin: 0, opacity: 0.92, fontSize: "1.2rem" }}>
+            Zwölf Menschen. Zwölf Orte. Ein Stoffkarpfen.
+          </p>
 
-        <p style={{ marginTop: "1rem", opacity: 0.75, fontSize: "1.25rem" }}>
-          Versand ausschließlich innerhalb Deutschlands.
-        </p>
+          <p style={{ margin: "0.75rem 0 0", fontSize: "1.25rem" }}>
+            Neues Jahr schon halb vorbei?{" "}
+            <strong style={{ fontWeight: 900 }}>Dann jetzt: billig.</strong>
+          </p>
 
-        <p style={{ marginTop: "2rem", opacity: 0.85, fontSize: "1.25rem" }}>
-          Kontakt:{" "}
-          <a
-            href="mailto:hi@karpfen-blank.de"
-            style={{ color: "white", textDecoration: "underline" }}
+          {/* ULTRA CTA */}
+          <button
+            className="ctaBtn"
+            onClick={handleBuy}
+            style={{
+              marginTop: "1.15rem",
+              width: "min(560px, 92vw)",
+              border: "none",
+              borderRadius: "999px",
+              padding: "1.35rem 1.6rem",
+              cursor: "pointer",
+              color: "white",
+              position: "relative",
+              overflow: "hidden",
+              background: "linear-gradient(135deg,#ff2d55,#ff9500)",
+              boxShadow:
+                "0 18px 40px rgba(0,0,0,0.5), 0 0 0 6px rgba(255,255,255,0.08)",
+              transform: "translateZ(0)",
+              animation: "pulseRing 1.6s infinite",
+              transition: "transform 140ms ease",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = "scale(1.03)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = "scale(1)";
+            }}
+            onMouseDown={(e) => {
+              e.currentTarget.style.transform = "scale(0.99)";
+            }}
+            onMouseUp={(e) => {
+              e.currentTarget.style.transform = "scale(1.03)";
+            }}
           >
-            hi@karpfen-blank.de
-          </a>
-        </p>
+            {/* shine sweep */}
+            <span
+              aria-hidden
+              style={{
+                position: "absolute",
+                top: "-40%",
+                left: "-40%",
+                width: "55%",
+                height: "180%",
+                background: "rgba(255,255,255,0.35)",
+                transform: "translateX(-120%) rotate(18deg)",
+                animation: "shine 2.8s ease-in-out infinite",
+              }}
+            />
+
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                lineHeight: 1.1,
+                position: "relative",
+                zIndex: 1,
+              }}
+            >
+              <div
+                className="ctaMain"
+                style={{ fontSize: "1.65rem", fontWeight: 950 }}
+              >
+                👉 Jetzt kaufen – 19,99 €
+              </div>
+              <div
+                style={{
+                  marginTop: "0.35rem",
+                  fontSize: "0.92rem",
+                  opacity: 0.9,
+                }}
+              >
+                inkl. Versand (DE) • Nur solange Vorrat reicht
+              </div>
+            </div>
+          </button>
+
+          <p style={{ marginTop: "0.9rem", opacity: 0.85 }}>
+            Versand ausschließlich innerhalb Deutschlands.
+          </p>
+
+          <p style={{ marginTop: "0.9rem", opacity: 0.9 }}>
+            Kontakt:{" "}
+            <a
+              href="mailto:hi@karpfen-blank.de"
+              style={{ color: "white", textDecoration: "underline" }}
+            >
+              hi@karpfen-blank.de
+            </a>
+          </p>
+        </div>
 
         {/* INSTAGRAM */}
         <a
@@ -95,15 +312,16 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
           style={{
-            marginTop: "3rem",
+            marginTop: "2.6rem",
             width: "64px",
             height: "64px",
             borderRadius: "999px",
-            background: "rgba(255,255,255,0.15)",
-            backdropFilter: "blur(4px)",
+            background: "rgba(255,255,255,0.14)",
+            backdropFilter: "blur(6px)",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
+            boxShadow: "0 12px 28px rgba(0,0,0,0.35)",
           }}
         >
           <svg
@@ -133,7 +351,8 @@ export default function Home() {
           style={{
             position: "absolute",
             inset: 0,
-            background: "rgba(0,0,0,0.55)",
+            background:
+              "linear-gradient(180deg, rgba(0,0,0,0.75), rgba(0,0,0,0.6))",
             backdropFilter: "blur(2px)",
           }}
         />
@@ -153,8 +372,9 @@ export default function Home() {
             alt="Karpfen Blank Kalender 2026 – Produktfoto"
             style={{
               width: "clamp(250px, 70vw, 700px)",
-              borderRadius: "12px",
-              boxShadow: "0 0 30px rgba(0,0,0,0.5)",
+              borderRadius: "18px",
+              boxShadow: "0 20px 60px rgba(0,0,0,0.55)",
+              border: "1px solid rgba(255,255,255,0.15)",
             }}
           />
 
@@ -162,15 +382,33 @@ export default function Home() {
             Karpfen Kalender 2026
           </h2>
 
-          {/* PRODUKTBESCHREIBUNG */}
+          <div
+            style={{
+              marginTop: "1rem",
+              background:
+                "linear-gradient(135deg, rgba(255,45,85,0.18), rgba(255,149,0,0.16))",
+              border: "1px solid rgba(255,255,255,0.16)",
+              borderRadius: "16px",
+              padding: "0.9rem 1.1rem",
+              width: "min(760px, 92vw)",
+              boxShadow: "0 18px 50px rgba(0,0,0,0.35)",
+            }}
+          >
+            <p style={{ margin: 0, fontSize: "1.25rem", opacity: 0.95 }}>
+              <strong>SALE:</strong> Jetzt nur{" "}
+              <strong>19,99 € inkl. Versand (DE)</strong> – keine Ausreden.
+            </p>
+          </div>
+
           <p
             style={{
-              fontSize: "1.25rem",
+              fontSize: "1.2rem",
               marginTop: "2rem",
               lineHeight: 1.7,
-              opacity: 0.95,
+              opacity: 0.92,
               textAlign: "justify",
               textAlignLast: "center",
+              maxWidth: "760px",
             }}
           >
             <strong>Karpfen Blank 2026</strong> ist ein A3-Wandkalender aus
@@ -178,51 +416,24 @@ export default function Home() {
             mit zwölf Menschen. Der Kalender erscheint in einer limitierten
             Auflage und eignet sich ideal als Geschenk oder für alle, die
             besondere Fotoprojekte schätzen.
-            <br />
-            <br />
-            Bei Bestellung bis zum <strong>20.12.</strong> kommt der Kalender
-            rechtzeitig vor Weihnachten bei dir an.
-          </p>
-
-          <h3 style={{ marginTop: "3rem", fontSize: "1.6rem" }}>
-            Über den Karpfen Blank Kalender
-          </h3>
-
-          {/* PROJEKT / IDEE */}
-          <p
-            style={{
-              fontSize: "1.25rem",
-              marginTop: "1.5rem",
-              lineHeight: 1.6,
-              opacity: 0.9,
-              textAlign: "justify",
-              textAlignLast: "center",
-            }}
-          >
-            Karpfen Blank entsteht aus Begegnungen. Der Stoffkarpfen reist durch
-            Berlin und taucht dort auf, wo Menschen bereit sind, sich auf den
-            Moment einzulassen. Ohne Inszenierung, ohne Kulisse – direkt,
-            zufällig, echt.
-            <br />
-            <br />
-            Der Kalender erscheint 2026 zum ersten Mal und wird ausschließlich
-            in kleiner Stückzahl produziert.
           </p>
 
           <button
             onClick={handleBuy}
             style={{
-              background: "white",
-              color: "black",
+              marginTop: "2.2rem",
+              background: "linear-gradient(135deg,#ff2d55,#ff9500)",
+              color: "white",
               border: "none",
               borderRadius: "999px",
-              padding: "1rem 3rem",
-              fontSize: "1.3rem",
-              marginTop: "2.5rem",
+              padding: "1.1rem 3.2rem",
+              fontSize: "1.25rem",
+              fontWeight: 950,
               cursor: "pointer",
+              boxShadow: "0 18px 45px rgba(0,0,0,0.55)",
             }}
           >
-            Jetzt kaufen – 29 €
+            Jetzt kaufen – 19,99 € (inkl. Versand)
           </button>
         </div>
       </section>
@@ -234,8 +445,9 @@ export default function Home() {
           textAlign: "center",
           padding: "2rem 1rem",
           fontSize: "0.9rem",
-          opacity: 0.85,
-          background: "rgba(0,0,0,0.7)",
+          opacity: 0.9,
+          background: "rgba(0,0,0,0.75)",
+          borderTop: "1px solid rgba(255,255,255,0.12)",
         }}
       >
         <a href="/impressum" style={{ margin: "0 1rem", color: "white" }}>
